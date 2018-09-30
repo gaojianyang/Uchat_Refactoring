@@ -1,0 +1,22 @@
+apply plugin: 'java-library'
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+}
+
+sourceCompatibility = "1.8"
+targetCompatibility = "1.8"
+
+
+dependencies {
+    def domainDependencies = rootProject.ext.domainDependencies
+    def domainTestDependencies = rootProject.ext.domainTestDependencies
+
+    compileOnly domainDependencies.javaxInject
+    compileOnly domainDependencies.rxJava
+    compileOnly domainDependencies.arrow
+
+    testCompileOnly domainTestDependencies.junit
+    testCompileOnly domainTestDependencies.mockito
+    testCompileOnly domainTestDependencies.assertj
+}

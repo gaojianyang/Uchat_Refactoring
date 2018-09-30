@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Uchat</string>
+
+    <!--exception msg-->
+    <string name="exception_message_generic">发生错误</string>
+
 </resources>
