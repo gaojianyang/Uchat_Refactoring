@@ -1,4 +1,6 @@
 # Uchat_Refactoring
+[采用Android-CleanArchitecture 架构](https://github.com/android10/Android-CleanArchitecture)
+---
 个人开发的聊天应用，具有手机号验证码登录,聊天,二维码扫一扫加好友,以及上传皮肤,下载皮肤功能,图片存储在云对象服务器,数据存储在搭建的云服务器上.
 重构后为MVP模式，采用了RxJava+Dagger2+Retrofit开发框架主要的第三方功能库：腾讯云Sdk(IM功能),Glide(图片加载),Greendao(数据库),ZXing(二维码),Retrofit(网络库),Rxjava(异步任务)
 ---
